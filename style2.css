@@ -1,0 +1,216 @@
+:root{
+	--primary: #b3b1b1;
+	--secondary: #991d1d;
+	--tertiary: #691414;
+	--link: #1c4954;
+	--btn: #f2d516;
+}
+
+/* Reset */
+body, p, a, ul, li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+ 	background: var(--primary);   
+ 	overflow-x: hidden;
+}
+
+nav{
+	background-color: var(--secondary);
+	width:100%;
+}
+
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: var(--secondary);
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+	margin: auto;
+}
+
+
+li{
+	float: left;
+}
+
+li a {
+
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-family: Lucida Bright;
+  	font-size: 1.5em;
+}
+
+li a:hover {
+ 	background-color: var(--tertiary);
+ 	color: white;
+}
+
+.btn{
+	color: var(--btn);
+}
+
+.btn:hover{
+	background: var(--secondary);
+	color: white;
+}
+/*
+.welcome{
+	width: 100%;
+	background-color: var(--secondary);
+	display: flex;
+    align-items: center;
+}
+*/
+
+.welcome{
+	display: grid;
+	background-color: var(--secondary);
+	grid-template-columns: 10% 60% 20% 10%;  
+}
+
+/*
+.welcome-text{
+	padding-left: 8.2em;
+	padding-right: 10em;
+	font-size: 1.2em;
+	letter-spacing: 1.5px;
+	line-height: 25px;	
+	text-align: justify;
+	color: white;
+}
+*/
+
+.welcome-text{
+	grid-column: 2;
+	padding-top: 2em;
+	margin-left: 1em;
+	font-family: Lucida Bright;
+	letter-spacing: 1.5px;
+	font-size: 1.3em;
+	line-height: 25px;
+	text-align: justify;
+	color: white;
+	text-shadow: 0 3px 1px 0 yellow;
+}
+
+.welcome-image{
+	grid-column: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile{
+    width: 230px;
+    height: auto;
+    padding: 1em;
+    max-height: 100%;
+    border-radius: 50%; 
+}
+
+.info{
+	grid-column: 2;
+	grid-row: 1;
+	text-align: center;
+    background-color: var(--tertiary);
+    color: black;
+    font-size: 1.5em;
+}
+
+.about{
+	padding-bottom: 40px; 
+	display:grid;
+	grid-template-columns: 10% 40% 40% 10%;
+	grid-template-rows: auto auto;
+	grid-row-gap: 40px;
+}
+
+#education{
+	grid-column: 2;
+	grid-row: 1;
+	justify-content: center;
+	text-align: center;
+}
+
+#organization{
+	grid-column: 3;
+	grid-row: 1;
+	justify-content: center;
+	text-align: center;
+}
+
+#ability{
+	grid-column: 2;
+	grid-row: 2;
+	justify-content: center;
+	text-align: center;
+}
+
+#skill{
+	grid-column: 3;
+	grid-row: 2;
+	justify-content: center;
+	text-align: center;
+}
+
+.judul{
+	padding: 10px;
+	background: var(--tertiary);
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+
+.isi{
+	padding: 10px;
+	background: var(--secondary);
+	margin-left: 1em;
+	margin-right: 1em;
+	height: auto;
+	font-size: 1.5em;
+	line-height: 50px;
+	color: white;
+}
+
+.grid{
+	display: grid;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows:auto auto;
+}
+
+.project{
+	padding-bottom: 40px; 
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows:auto auto;
+}
+
+#project{
+	grid-column: 2;
+	grid-row: 1;
+	text-align: center;
+}
+
+footer{
+	padding-top: 3em;
+    padding-bottom: 2em;
+	margin: 20px 0 0;
+	background-color: var(--secondary);
+	color: white;
+	font-family: Lucida Bright;
+	font-size: 1em;
+    text-align: center;
+}
