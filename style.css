@@ -118,11 +118,23 @@ li a:hover {
 }
 
 .pic{
-    width: 91%;
-    height: 70%;
-    align-items: center;
-	justify-content: center;
+	margin-left: 1em;
+	margin-right: 1em;
+    width: 490px;
+    height: 250px;
+	-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s; 
 }
+
+.pic:hover{ 
+	-webkit-transform:scale(1.02); 
+	-moz-transform:scale(1.02); 
+	-o-transform:scale(1.02); 
+	opacity: 0.6; 
+	z-index: 2; 
+}
+
 
 .profile{
     width: 230px;
@@ -130,7 +142,7 @@ li a:hover {
     padding: 1px;
     border: 3px solid white;
     border-radius: 50%;
-    margin: 20px 
+    margin: 20px ;
 }
 
 .info{
@@ -178,6 +190,7 @@ li a:hover {
 	text-align: center;
 }
 
+
 .judul{
 	padding: 10px;
 	background: var(--tertiary);
@@ -207,7 +220,7 @@ li a:hover {
 	grid-template-rows:auto auto;
 }
 
-.project{
+#project{
 	display: grid;
 	grid-template-columns: 10% 40% 40% 10%;
 	grid-template-rows:auto;
@@ -223,6 +236,7 @@ li a:hover {
 	grid-column: 3;
 	grid-row: 1;
 	text-align: center;
+	
 }
 
 #contact{
@@ -230,6 +244,9 @@ li a:hover {
 	grid-row: 1;
 }
 
+.project:hover{
+	background: var(--secondary);
+}
 footer{
 	padding-top: 3em;
     padding-bottom: 2em;
