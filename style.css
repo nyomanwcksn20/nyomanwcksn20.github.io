@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width:125px;
+  height:125px;
+}
+
+.info {
+  text-align: left;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.divider {
+  margin-top: 20px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 48%;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border: 1px solid #686666; /* Warna dan ketebalan border bisa disesuaikan */
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  background-color: #f0f0f0; /* Warna latar belakang saat dihover */
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile img {
+      margin-bottom: 10px;
+  }
+
+  .project-list {
+      flex-direction: column;
+  }
+
+  .project {
+      width: 100%;
+  }
+}
+
+
+.project-description {
+  text-align: justify;
+}
+
+.project-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
