@@ -19,9 +19,91 @@
         <hr class="divider">
 
         <div class="content">
+            <h3> Keterangan Data </h3>
             <p class="project-description">
-                eiao 324j2o  2i4 2ij  dofsmio 34o2i4o  24ji234j2o 2342io oj oj iadsas sssddddd
+                Data food_order.csv saya ambil dari website Kaggle pada data tersebut terdapat 9 kolom dan 1898 baris.
+                Berikut adalah penjelasan untuk setiap kolom pada data ini:
             </p>
+
+            <table>
+                <tr class="top-row">
+                    <td>Kolom</td>
+                    <td>Deskripsi</td>
+                </tr>
+                <tr>
+                    <td>order_id</td>
+                    <td>Nomor Order</td>
+                </tr>
+                <tr>
+                    <td>customer_id</td>
+                    <td>Nomor Customer</td>
+                </tr>
+                <tr>
+                    <td>restaurant_name</td>
+                    <td>Nama Restoran</td>
+                </tr>
+                <tr>
+                    <td>cuisine_type</td>
+                    <td>Tipe Masakan</td>
+                </tr>
+                <tr>
+                    <td>cost_of_the_order</td>
+                    <td>Biaya Pesanan</td>
+                </tr>
+                <tr>
+                    <td>day_of_the_week</td>
+                    <td>Hari Dalam Minggu</td>
+                </tr>
+                <tr>
+                    <td>rating</td>
+                    <td>Penilaian (1-5)</td>
+                </tr>
+                <tr>
+                    <td>food_preparation_time</td>
+                    <td>Waktu Makanan Disiapkan</td>
+                </tr>
+                <tr>
+                    <td>delivery_time</td>
+                    <td>Waktu Makanan Diantarkan</td>
+                </tr>
+            </table>
+
+            <hr class="divider">
+
+            <h3> Pertanyaan </h3>
+            
+                <ol class="project-description">
+                    <li>
+                        <p>Jenis masakan apa yang paling dipesan?</p>
+                    </li>
+                    <li>
+                        <p>Berapa biaya rata-rata per pesanan?</p>
+                    </li>
+                    <li>
+                        <p>Hari apa yang paling banyak pesanan dalam minggu ini?</p>
+                    </li>
+                    <li>
+                        <p>Berapa waktu pengiriman rata-rata?</p>
+                    </li>
+                    <li>
+                        <p>Berapa waktu persiapan makanan rata-rata?</p>
+                    </li>
+                    <li>
+                        <p>Restoran dengan waktu penyelesaian tercepat?</p>
+                    </li>
+                    <li>
+                        <p>Restoran dengan peringkat berdasarkan jenis masakan?</p>
+                    </li>
+                </ol>
+
+                <h3> Proses Analisis </h3>
+                <p class="project-description">
+                    Langkah awal yang saya lakukan pada proses ini adalah melakukan pengecekan data,
+                     dimana saya melakukan pengecekan pada kolom di dataframe. Berikut kode yang digunakan:
+                </p>
+
+                <code># Summary
+                    df.info() </code>
 
             <div class="project-image">
                 <img src="img/pic.png" alt="Gambar Proyek"> 
@@ -29,7 +111,8 @@
             </div>
 
             <p class="project-description">
-                dslfui fnids nufnu nusaofdo a ajofja idjfoi idfj oiafafo aij oiajfoijdiajf oiajijoad jaojoidjf oajoifjai jfihewhu weahyefqey gfeuaygtgei 
+                Quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat.
             </p>
 
             <button onclick="goToIndex()">Kembali ke Halaman Utama</button>

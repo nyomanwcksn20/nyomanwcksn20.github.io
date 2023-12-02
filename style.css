@@ -98,3 +98,24 @@ button {
   cursor: pointer;
 }
 
+code {
+  background-color: #333; /* Warna latar belakang gelap (contoh: hitam) */
+  color: #fff; /* Warna teks putih */
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px;
+  border: 2px solid #ddd; /* Garis tepi tabel */
+}
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}
+
+.top-row td {
+  text-align: center; /* Teks di dalam sel pada baris pertama akan terpusat */
+}
